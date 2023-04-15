@@ -8,17 +8,17 @@ app.get('/',(req,res)=>{
     })
 })
 
-app.get('/',(req,res)=>{
+app.get('/clientes',(req,res)=>{
     res.sendFile('./static/nosotros.html',{
         root:__dirname
     })
 })
 
-app.get('/',(req,res)=>{
+app.get('/productos',(req,res)=>{
     res.sendFile('./static/productos.html',{
         root:__dirname
     })
 })
 
-app.listen(3000)
-console.log(`Server on port ${3000}`)
+app.listen(5000)
+console.log(`Server on port ${5000}`)
